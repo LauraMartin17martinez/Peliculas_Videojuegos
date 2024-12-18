@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estilos/planificar.css" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <title>Planificación Semanal</title>
+</head>
+
+<body>
+    <header class="grid-container">
+        <div id="ready">
+            <img src="img/ready-player-one.jpg" alt="Ready player one" id="ready" />
+        </div>
+
+        <div class="titulo">
+            <h1>Videojuegos y Peliculas</h1>
+            <h1>Búsqueda de películas o vídeojuegos</h1>
+            <meta name="autor" content="Laura Martín Martínez">
+        </div>
+    </header>
+
+    <main class="grid-main">
+        <div class="izq">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pelisSobreVideojuegos.html">Pelis</a></li>
+                <li><a href="videojuegosSobrePelis.html">Videojuegos</a></li>
+                <li><a href="busqueda.html">Búsqueda</a></li>
+                <li><a href="reseña.html">Reseña</a></li>
+            </ul>
+        </div>
+
+        <div class="centro">
+            <h3>Planificar días de la semana</h3>
+
+            <form action="#" method="get">
+                <label for="dias">SELECCIONE EL NÚMERO DE DÍAS QUE DESEA PLANIFICAR</label>
+                <br /><br />
+                <select id="dias" name="dias">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3" selected>3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                </select>
+
+                <div class="boton">
+                    <a href="planificacion.html"><input type="button"
+                            onclick="alert('Vas a ser rediridido a Planificación')" value="Aceptar" /></a>
+                </div>
+            </form>
+            <div class="plani">
+                <a href="planificacion.html">Ver planificación</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li>&copy Propiedad de Laura</li>
+            <li>
+                <a href="https://site.educa.madrid.org/ies.villablanca.madrid/">IES Villablanca</a>
+            </li>
+            <li><a href="mailto:laura.martin17@educa.madrid.org">Contacto</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>

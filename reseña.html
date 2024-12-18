@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/reseña.css">
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <meta name="autor" content="Laura Martín Martínez">
+    <title>Reseña</title>
+</head>
+
+<body>
+    <header class="grid-container">
+        <div id="ready">
+            <img src="img/ready-player-one.jpg" alt="Ready player one" id="ready" />
+        </div>
+
+        <div class="titulo">
+            <h1>Videojuegos y Peliculas</h1>
+            <h1>Búsqueda de películas o vídeojuegos</h1>
+        </div>
+    </header>
+
+    <main class="grid-main">
+        <div class="izq">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="pelisSobreVideojuegos.html">Pelis</a></li>
+                <li><a href="videojuegosSobrePelis.html">Videojuegos</a></li>
+                <li><a href="busqueda.html">Búsqueda</a></li>
+                <li><a href="planificar.html">Planificación</a></li>
+            </ul>
+        </div>
+
+        <div class="centro">
+            <h3>Añade reseña de una película o vídeojuego
+                <hr>
+            </h3>
+
+            <form action="#" method="get">
+
+                <table>
+
+                <tr>
+                    <td><label for="nombre">NOMBRE DEL COMENTARISTA: </label></td>
+                    <td><input type="text" id="nombre"></td>
+                </tr>
+
+                <tr>
+                    <td> <label for="comenta">¿QUÉ SE COMENTA?: </label> </td>
+                    <td> <select id="comenta" name="comenta">
+                            <option value="seleccionar">SELECCIONAR: </option>
+                            <option value="PELI">PELÍCULA</option>
+                            <option value="JUEGO">VIDEOJUEGO</option>
+                        </select></td>
+                </tr>
+
+                <tr>
+                    <td><label for="nombrePeli">NOMBRE DE LA PELÍCULA O VÍDEOJUEGO: </label></td>
+                    <td><input type="text" id="nombrePeli"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="rese">COMENTARIO/RESEÑA: </label></td>
+                    <td><textarea name="rese" id="rese" placeholder="AÑADIR RESEÑA" rows="7" cols="66"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td><label for="color">COLOR QUE ASOCIAS: </label></td>
+                    <td><input type="color" id="color"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="valor">VALOR QUE LE DAS (ENTRE 0 Y 10)</label></td>
+                    <td><input type="range" id="valor"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="archivo">ADJUNTAR UN ARCHIVO</label></td>
+                    <td><input type="file" id="archivo" value="Seleccionar archivo"></td>
+                </tr>
+
+                <tr>
+                    <td><label for="url">ENLACE DE REFERENCIA: </label></td>
+                    <td><input type="url" id="url"></td>
+                </tr>
+
+            </table>
+
+                <div class="botones">
+
+                    <input type="submit" value="Enviar" class="boton">
+                    <input type="reset" value="Limpiar" class="boton">
+                    <input type="button" class="boton" onclick="alert('ESTE BOTÓN NO HACE NADA')" value="Vista Previa" />
+
+                </div>
+
+            </form>
+
+
+
+        </div>
+    </main>
+
+    <footer>
+        <ul>
+            <li>&copy Propiedad de Laura</li>
+            <li>
+                <a href="https://site.educa.madrid.org/ies.villablanca.madrid/">IES Villablanca</a>
+            </li>
+            <li><a href="mailto:laura.martin17@educa.madrid.org">Contacto</a></li>
+        </ul>
+    </footer>
+</body>
+
+</html>
