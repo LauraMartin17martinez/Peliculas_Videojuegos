@@ -1,0 +1,161 @@
+html {
+    background-image: url(../img/matrix.png);
+}
+
+@font-face {
+    font-family: Impact;
+    src: url(../fuente/Fantasy.ttf);
+}
+
+@font-face {
+    font-family: SHOW;
+    src: url(../fuente/SHOWG.TTF);
+}
+
+/*cabecera de la página*/
+
+header {
+    display: grid;
+    grid-template-areas: 'img titulo';
+    grid-template-columns: 10vw 80vw;
+    background-image: url(../img/matrix_cab.png);
+    height: fit-content;
+}
+
+#ready{
+    text-align: left;
+    width: 200px;
+    padding-left: 0;
+
+}
+
+.titulo h1{
+    text-align: center;
+    color: darkslategrey;
+    font-family: Impact, fantasy;
+    font-weight: lighter;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+/*Main de la página*/
+
+p.principal {
+font-size: x-large;
+text-align: justify;
+background-color: rgb(240, 240, 240);
+}
+
+h2 {
+    color: darkslategrey;
+    font-family: Impact, fantasy;
+    font-weight: lighter;
+}
+
+.contenedor {
+
+    display: grid;
+    grid-template-areas: 'izq centro drch';
+    grid-template-columns: 10vw 74vw 14vw;
+
+}
+
+.videojuegos {
+    display: grid;
+    grid-template-areas: 'rusia aladdin batman blade anillos potter';
+    grid-template-areas: 'kong lego scarface spiderman thing warriors';
+    gap: 15px;
+    height: auto;
+}
+
+.videojuegos div {
+    box-shadow: 2px 5px 10px 8px rgb(99, 99, 99);
+    width: 210px;
+}
+
+.videojuegos h3, .videojuegos p {
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-top: 2px;
+}
+
+aside.izq li{
+    list-style-type: none;
+    font-size: x-large;
+    padding-bottom: 10px;
+    font-family: Impact, fantasy;
+}
+
+.izq a:link {
+    color: rgb(88, 0, 88);
+}
+
+.drch {
+    margin-top: 200px;
+    margin-left: 10px;
+    border: 2px rgb(121, 121, 121) solid;
+    height: fit-content;
+    padding: 5px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 3px 3px 3px 5px rgb(177, 177, 177);
+}
+
+.drch li {
+    list-style-type: none;
+    text-align: right;
+    padding-top: 12px;
+    font-family: SHOW;
+    color: rgb(88, 0, 88);
+
+}
+
+.drch h3 {
+    color: rgb(160, 0, 160);
+    font-size: x-large;
+
+}
+
+.videojuegos a:link {
+    color: red;
+    text-decoration: none;
+}
+
+.drch a:link {
+    color: rgb(88, 0, 88);
+    text-decoration: none;
+    font-size: large;
+    background-color: rgb(0, 225, 255);
+    padding: 5px;
+}
+
+.drch a:hover {
+    color: rgb(255, 102, 0);
+    text-decoration: none;
+    font-size: large;
+    background-color: rgb(0, 255, 0);
+    padding: 5px;
+}
+
+.drch a:visited {
+    color: rgb(255, 159, 86);
+    font-size: large;
+    background-color: rgb(149, 255, 149);
+    padding: 5px;
+}
+
+hr {
+    border: 1px dashed gray;
+}
+
+/*Footer de la página*/
+
+footer {
+    text-align: right;
+}
+
+footer li {
+    list-style-type: none;
+
+}

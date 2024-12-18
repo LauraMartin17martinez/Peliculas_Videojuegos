@@ -1,0 +1,160 @@
+html {
+    background-image: url(../img/matrix.png);
+}
+
+@font-face {
+    font-family: Impact;
+    src: url(../fuente/Fantasy.ttf);
+}
+
+@font-face {
+    font-family: SHOW;
+    src: url(../fuente/SHOWG.TTF);
+}
+
+/*cabecera de la página*/
+
+header {
+    display: grid;
+    grid-template-areas: 'img titulo';
+    grid-template-columns: 10vw 80vw;
+    background-image: url(../img/matrix_cab.png);
+    height: fit-content;
+}
+
+#ready{
+    text-align: left;
+    width: 200px;
+    padding-left: 0;
+
+}
+
+.titulo h1{
+    text-align: center;
+    color: darkslategrey;
+    font-family: Impact, fantasy;
+    font-weight: lighter;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+/*Main de la página*/
+
+
+
+h3 {
+    color: darkslategrey;
+    font-family: Impact, fantasy;
+    font-weight: lighter;
+}
+
+.grid-main {
+
+    display: grid;
+    grid-template-areas: 'izq centro';
+    grid-template-columns: 10vw auto;
+
+}
+
+table {
+    font-family: SHOW;
+    color: darkslategrey;
+    margin-left: 200px;
+}
+
+tr td{
+    width: 220px;
+    height: 50px;
+    font-size: larger;
+    
+}
+
+/*inputs*/
+
+input, textarea {
+    background-color: rgb(231, 231, 231);
+}
+
+#nombre {
+    width: 600px;
+    border: dashed 1px rgb(0, 132, 255);
+}
+
+#comenta {
+    font-family: SHOW;
+    color: rgb(88, 88, 88);
+    padding-top: 5px;
+}
+
+#nombrePeli {
+    width: 600px;
+    border: dashed 1px rgb(0, 132, 255);
+}
+
+#rese {
+    border: dashed 1px rgb(0, 132, 255);
+    font-family: SHOW;
+    color: rgb(88, 88, 88);
+}
+
+#color {
+    border: dashed 1px rgb(0, 132, 255);
+
+}
+
+#valor {
+    width: 120px;
+}
+
+#archivo {
+    font-family: SHOW;
+    color: rgb(88, 88, 88);
+    font-size: larger;
+    background-color: rgba(238, 232, 170, 0);
+}
+
+#url {
+    width: 650px;
+    border: dashed 1px rgb(0, 132, 255);
+}
+
+/*botones*/
+
+.botones {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.boton {
+    border-radius: 0;
+    font-size: larger;
+}
+
+/*Menú izquierda*/
+
+.izq li{
+    list-style-type: none;
+    font-size: x-large;
+    padding-bottom: 10px;
+    font-family: Impact, fantasy;
+}
+
+.izq a:link {
+    color: rgb(88, 0, 88);
+}
+
+
+/*Footer de la página*/
+
+footer {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+}
+
+footer li {
+    list-style-type: none;
+
+}

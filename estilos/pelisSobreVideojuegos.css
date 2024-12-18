@@ -1,0 +1,116 @@
+html {
+    background-image: url(../img/matrix.png);
+}
+
+@font-face {
+    font-family: Impact;
+    src: url(../fuente/Fantasy.ttf);
+}
+
+/*cabecera de la página*/
+
+header {
+    display: grid;
+    grid-template-areas: 'img titulo';
+    grid-template-columns: 10vw 80vw;
+    background-image: url(../img/matrix_cab.png);
+    height: fit-content;
+}
+
+#ready{
+    text-align: left;
+    width: 200px;
+    padding-left: 0;
+
+}
+
+.titulo h1{
+    text-align: center;
+    color: darkslategrey;
+    font-family: Impact, fantasy;
+    font-weight: lighter;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+/*Main de la página*/
+
+h2 {
+    color: darkslategrey;
+    font-family: Impact, fantasy;
+    font-weight: lighter;
+}
+
+.contenedor {
+
+    display: grid;
+    grid-template-areas: 'izq main';
+    grid-template-columns: 10vw 88vw;
+
+}
+
+
+
+.peliculas {
+    display: grid;
+    grid-template-areas: 'ready jumanji pilgrim';
+    grid-template-areas: 'level guerra tron';
+    gap: 15px;
+    grid-template-columns: 32% 32% 32%;
+    height: auto;
+}
+
+.grid-main div img {
+    width: 100%;
+    height: auto;
+}
+
+.grid-main div .texto {
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ready, .jumanji, .pilgrim, .level, .guerra, .tron {
+    border: 1px solid black;
+    box-shadow: 1px 10px 10px 5px rgb(75, 71, 71);
+    background-color: rgba(240, 248, 255, 0.653);
+}
+
+hr {
+border: dashed 1px;
+
+}
+
+aside div.izq li{
+    list-style-type: none;
+    font-size: x-large;
+    padding-bottom: 10px;
+    font-family: Impact, fantasy;
+}
+
+.izq a:link {
+    color: rgb(88, 0, 88);
+}
+
+a:link#rojo {
+    color: red ;
+    text-decoration: none;
+}
+
+a:visited#rojo {
+    color: rgb(148, 0, 0) ;
+    text-decoration: none;
+}
+
+/*Footer de la página*/
+
+footer {
+    text-align: right;
+}
+
+footer li {
+    list-style-type: none;
+
+}

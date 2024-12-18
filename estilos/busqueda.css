@@ -1,0 +1,119 @@
+html {
+    background-image: url(../img/matrix.png);
+}
+
+@font-face {
+    font-family: Impact;
+    src: url(../fuente/Fantasy.ttf);
+}
+
+@font-face {
+    font-family: SHOW;
+    src: url(../fuente/SHOWG.TTF);
+}
+
+/*cabecera de la página*/
+
+header {
+    display: grid;
+    grid-template-areas: 'img titulo';
+    grid-template-columns: 10vw 80vw;
+    background-image: url(../img/matrix_cab.png);
+    height: fit-content;
+}
+
+#ready{
+    text-align: left;
+    width: 200px;
+    padding-left: 0;
+
+}
+
+.titulo h1{
+    text-align: center;
+    color: darkslategrey;
+    font-family: Impact, fantasy;
+    font-weight: lighter;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+/*Main de la página*/
+
+
+
+h3 {
+    color: darkslategrey;
+    font-family: Impact, fantasy;
+    font-weight: lighter;
+}
+
+.grid-main {
+
+    display: grid;
+    grid-template-areas: 'izq centro';
+    grid-template-columns: 10vw auto;
+
+}
+
+hr {
+    margin-bottom: 50px;
+}
+
+.centro table{
+    margin: 0 auto;
+    width: 45vw;
+}
+
+tr td input{
+    border: 2px blue solid;
+    width: 300px;
+    height: 20px;
+    background-color: rgb(221, 221, 221);
+}
+
+table label {
+    font-size: 16pt;
+
+}
+
+.boton {
+   text-align: center;
+   margin-top: 30px;
+}
+
+button {
+    font-weight: bolder;
+    font-size: 12pt;
+    border: 2px blue solid;
+    border-radius: 30px;
+}
+
+/*Menú izquierda*/
+
+.izq li{
+    list-style-type: none;
+    font-size: x-large;
+    padding-bottom: 10px;
+    font-family: Impact, fantasy;
+}
+
+.izq a:link {
+    color: rgb(88, 0, 88);
+}
+
+
+/*Footer de la página*/
+
+footer {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+}
+
+footer li {
+    list-style-type: none;
+
+}

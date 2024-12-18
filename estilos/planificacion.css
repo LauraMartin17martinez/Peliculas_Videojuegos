@@ -1,0 +1,125 @@
+html {
+    background-image: url(../img/matrix.png);
+}
+
+@font-face {
+    font-family: Impact;
+    src: url(../fuente/Fantasy.ttf);
+}
+
+@font-face {
+    font-family: SHOW;
+    src: url(../fuente/SHOWG.TTF);
+}
+
+/*cabecera de la página*/
+
+header {
+    display: grid;
+    grid-template-areas: 'img titulo';
+    grid-template-columns: 10vw 80vw;
+    background-image: url(../img/matrix_cab.png);
+    height: fit-content;
+}
+
+#ready{
+    text-align: left;
+    width: 200px;
+    padding-left: 0;
+
+}
+
+.titulo h1{
+    text-align: center;
+    color: darkslategrey;
+    font-family: Impact, fantasy;
+    font-weight: lighter;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+/*Main de la página*/
+
+
+h2 {
+    color: darkslategrey;
+    font-family: Impact, fantasy;
+    margin-top: 50px;
+}
+
+h3 {
+    font-weight: lighter;
+
+}
+
+.grid-main {
+
+    display: grid;
+    grid-template-areas: 'izq centro';
+    grid-template-columns: 12vw auto;
+
+}
+
+/*tabla*/
+
+table {
+    font-size: larger;
+    border: 1px blue solid;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+td {
+    border: 1px blue solid;
+    padding: 10px;
+
+}
+
+.clase {
+    color: white;
+    background-color: rgb(174, 255, 174);
+    font-weight: bolder; 
+}
+
+.azul {
+    color: blue;
+    font-weight: bolder;
+    background-color: darkgrey;
+}
+
+.dormir {
+    color: white;
+    background-color: black;
+    font-weight: bolder;
+}
+
+/*Menú izquierda*/
+
+.izq li{
+    list-style-type: none;
+    font-size: x-large;
+    padding-bottom: 10px;
+    font-family: Impact, fantasy;
+}
+
+.izq a:link {
+    color: rgb(88, 0, 88);
+}
+
+
+/*Footer de la página*/
+
+footer {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+}
+
+footer li {
+    list-style-type: none;
+
+}

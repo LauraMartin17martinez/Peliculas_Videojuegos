@@ -1,0 +1,159 @@
+html {
+    background-image: url(../img/matrix.png);
+}
+
+@font-face {
+    font-family: Impact;
+    src: url(../fuente/Fantasy.ttf);
+}
+
+@font-face {
+    font-family: SHOW;
+    src: url(../fuente/SHOWG.TTF);
+}
+
+/*cabecera de la página*/
+
+header {
+    display: grid;
+    grid-template-areas: 'img titulo';
+    grid-template-columns: 10vw 80vw;
+    background-image: url(../img/matrix_cab.png);
+    height: fit-content;
+}
+
+#ready{
+    text-align: left;
+    width: 200px;
+    padding-left: 0;
+
+}
+
+.titulo h1{
+    text-align: center;
+    color: darkslategrey;
+    font-family: Impact, fantasy;
+    font-weight: lighter;
+    margin-bottom: 0px;
+    margin-top: 0px;
+
+}
+
+/*Main de la página*/
+
+
+
+h3 {
+    color: darkslategrey;
+    font-family: Impact, fantasy;
+    font-weight: lighter;
+}
+
+.grid-main {
+
+    display: grid;
+    grid-template-areas: 'izq centro';
+    grid-template-columns: 10vw auto;
+
+}
+
+form {
+    border: 2px rgb(123, 123, 123) solid;
+    box-shadow: 2px 2px 4px 2px rgb(136, 136, 136);
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 500px;
+    text-align: center;
+    border-radius: 20px;
+    background-color: rgb(158, 91, 130);
+    font-family: SHOW;
+
+}
+
+form label {
+    color: white;
+}
+
+select  {
+    padding: 6px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-family: SHOW;
+    font-size: 12pt;
+    background-color: rgb(232, 232, 232);
+    color: rgb(47, 47, 47);
+    border: 1px black solid;
+    border-left: 2px black solid;
+    border-bottom: 2px black solid;
+    border-radius: 2px;
+    box-shadow: 0px 0px 0px 1px white;
+} 
+
+/*botones*/
+
+.boton input {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    background-color: pink;
+    width: 110px;
+    height: 30px;
+    font-family: SHOW;
+    color: red;
+    font-size: 12pt;
+    box-shadow: 1px 1px 1px 1px rgb(0, 0, 0);
+    border: 0px;
+
+}
+
+.plani {
+    margin-top: 30px;
+    margin-left: 650px;
+}
+
+.plani a:link {
+    color: rgb(202, 13, 13);
+    font-weight: bolder;
+    font-size: 14pt;
+    text-decoration: none;
+    text-shadow: 3px 4px 4px rgb(105, 105, 105);
+}
+
+.plani a:hover {
+    color: rgba(171, 0, 201, 0.965);
+    background-color: rgb(255, 160, 97);
+    box-shadow: 1px 1px 3px 1px rgb(70, 70, 70);
+    font-weight: bolder;
+    font-size: 14pt;
+    text-decoration: none;
+}
+
+
+
+/*Menú izquierda*/
+
+.izq li{
+    list-style-type: none;
+    font-size: x-large;
+    padding-bottom: 10px;
+    font-family: Impact, fantasy;
+}
+
+.izq a:link {
+    color: rgb(88, 0, 88);
+}
+
+
+/*Footer de la página*/
+
+footer {
+    text-align: right;
+    position: absolute;
+    bottom: 0;
+    width: 99%;
+}
+
+footer li {
+    list-style-type: none;
+
+}
